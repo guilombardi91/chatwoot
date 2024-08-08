@@ -1,15 +1,15 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for Chatwoot server.
+  description: Esta é a documentação da API para o servidor GeniusChat.
   version: 1.0.0
-  title: Chatwoot
-  termsOfService:	https://www.chatwoot.com/terms-of-service/
+  title: Price GeniusChat
+  termsOfService:	https://pricetecnologia.com.br/politicadeprivacidade.html/
   contact:
-    email: hello@chatwoot.com
+    email: contato@pricetecnologia.com.br
   license:
     name: MIT License
     url: https://opensource.org/licenses/MIT
-host: app.chatwoot.com
+host: geniuschat.pricetecnologia.com.br
 basePath: /
 schemes:
   - https
