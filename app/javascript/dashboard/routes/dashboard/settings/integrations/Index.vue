@@ -27,7 +27,7 @@ onMounted(() => {
     <template #header>
       <BaseSettingsHeader
         :title="$t('INTEGRATION_SETTINGS.HEADER')"
-        :description="$t('INTEGRATION_SETTINGS.DESCRIPTION')"
+        description="O GeniusChat integra-se com várias ferramentas e serviços para melhorar a eficiência da sua equipe. Explore a lista abaixo para configurar seus aplicativos favoritos."
         :link-text="$t('INTEGRATION_SETTINGS.LEARN_MORE')"
         feature-name="integrations"
       />
