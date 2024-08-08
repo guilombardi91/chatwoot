@@ -3,7 +3,7 @@
     "NEW_TEAM": "Create new team",
     "HEADER": "Teams",
     "LOADING": "Fetching teams",
-    "DESCRIPTION": "Teams allow you to organize agents into groups based on their responsibilities. An agent can belong to multiple teams. When working collaboratively, you can assign conversations to specific teams.",
+    "DESCRIPTION": "As equipes permitem que você organize agentes em grupos com base em suas responsabilidades. Um agente pode pertencer a várias equipes. Ao trabalhar de forma colaborativa, você pode atribuir conversas a equipes específicas.",
     "LEARN_MORE": "Learn more about teams",
     "LIST": {
       "404": "There are no teams created on this account.",

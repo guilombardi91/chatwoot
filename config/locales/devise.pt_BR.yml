@@ -17,7 +17,7 @@ pt_BR:
       unconfirmed: "Antes de continuar, você precisa confirmar seu endereço de e-mail."
     mailer:
       confirmation_instructions:
-        subject: "Instruções de Confirmação"
+        subject: "Parabéns, você foi convidado para o GeniusChat!"
       reset_password_instructions:
         subject: "Instruções para alteração de senha"
       unlock_instructions:

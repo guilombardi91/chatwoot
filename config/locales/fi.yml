@@ -199,10 +199,10 @@ fi:
       description: "Integrate Chatwoot with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
     webhooks:
       name: "Webhookit"
-      description: "Webhook events provide real-time updates about activities in your Chatwoot account. You can subscribe to your preferred events, and Chatwoot will send you HTTP callbacks with the updates."
+      description: "Os Webhook's fornecem atualizações em tempo real sobre atividades na sua conta do Price GeniusChat. Você pode assinar seus eventos preferidos, e o Price GeniusChat enviará retornos de chamada HTTP com as atualizações."
     dialogflow:
       name: "Dialogflow"
-      description: "Build chatbots with Dialogflow and easily integrate them into your inbox. These bots can handle initial queries before transferring them to a customer service agent."
+      description: "Crie chatbots com o Dialogflow e integre-os facilmente à sua caixa de entrada. Esses bots podem lidar com consultas iniciais antes de transferi-las para um agente de atendimento ao cliente."
     google_translate:
       name: "Google Translate"
       description: "Integrate Google Translate to help agents easily translate customer messages. This integration automatically detects the language and converts it to the agent's or admin's preferred language."

@@ -1,7 +1,7 @@
 {
   "INTEGRATION_SETTINGS": {
     "HEADER": "整合方式",
-    "DESCRIPTION": "Chatwoot integrates with multiple tools and services to improve your team's efficiency. Explore the list below to configure your favorite apps.",
+    "DESCRIPTION": "O GeniusChat integra-se com várias ferramentas e serviços para melhorar a eficiência da sua equipe. Explore a lista abaixo para configurar seus aplicativos favoritos.",
     "LEARN_MORE": "Learn more about integrations",
     "LOADING": "Fetching integrations",
     "WEBHOOK": {
