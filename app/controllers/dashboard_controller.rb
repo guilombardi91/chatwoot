@@ -34,6 +34,15 @@ class DashboardController < ActionController::Base
       'DEPLOYMENT_ENV',
       'CSML_EDITOR_HOST'
     ).merge(app_config)
+    @global_config['INSTALLATION_NAME'] = 'Price GeniusChat'
+    @global_config['BRAND_NAME'] = 'Price Tecnologia'
+    @global_config['LOGO'] = 'https://pricetecnologia.com.br/images/logo3.svg'
+    @global_config['LOGO_DARK'] = 'https://pricetecnologia.com.br/images/logo_darkprice.svg'
+    @global_config['LOGO_THUMBNAIL'] = 'https://pricetecnologia.com.br/images/logo_thumbnail3.svg'
+    @global_config['TERMS_URL'] = 'https://pricetecnologia.com.br/politicadeprivacidade.html'
+    @global_config['BRAND_URL'] = 'https://pricetecnologia.com.br/'
+    @global_config['PRIVACY_URL'] = 'https://pricetecnologia.com.br/politicadeprivacidade.html'
+
   end
 
   def set_dashboard_scripts

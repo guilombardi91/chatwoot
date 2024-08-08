@@ -1,17 +1,17 @@
 {
   "LOGIN": {
-    "TITLE": "Entrar no Chatwoot",
+    "TITLE": "Price Geniuschat",
     "EMAIL": {
-      "LABEL": "e-mail",
-      "PLACEHOLDER": "exemplo@empresa.com",
+      "LABEL": "E-mail",
+      "PLACEHOLDER": "Digite seu e-mail",
       "ERROR": "Digite um endereço de e-mail válido"
     },
     "PASSWORD": {
       "LABEL": "Senha",
-      "PLACEHOLDER": "Senha"
+      "PLACEHOLDER": "Digite sua senha"
     },
     "API": {
-      "SUCCESS_MESSAGE": "Acesso bem-sucedido",
+      "SUCCESS_MESSAGE": "Acesso autorizado",
       "ERROR_MESSAGE": "Não foi possível conectar ao servidor Woot. Tente novamente.",
       "UNAUTH": "Usuário ou senha incorretos. Por favor, tente novamente."
     },
@@ -20,7 +20,7 @@
       "BUSINESS_ACCOUNTS_ONLY": "Use o endereço de e-mail da empresa para fazer login",
       "NO_ACCOUNT_FOUND": "Não encontramos uma conta para seu endereço de e-mail."
     },
-    "FORGOT_PASSWORD": "Esqueceu-se da sua senha?",
+    "FORGOT_PASSWORD": "Esqueceu sua senha?",
     "CREATE_NEW_ACCOUNT": "Criar nova conta",
     "SUBMIT": "Entrar"
   }
