@@ -11,7 +11,7 @@ export default {
       default: false,
     },
     contact: {
-      type: Array,
+      type: Object,
       default: () => ({}),
     },
   },
@@ -56,6 +56,32 @@ export default {
         @success="onSuccess"
         @cancel="onCancel"
       />
+      <label
+          v-if="isOneOffType"
+          class="multiselect-wrap--small"
+          :class="{ error: v$.selectedAudience.$error }"
+        >
+          {{ $t('CAMPAIGN.ADD.FORM.AUDIENCE.LABEL') }}
+          <multiselect
+            v-model="selectedAudience"
+            :options="audienceList"
+            track-by="id"
+            label="title"
+            multiple
+            :close-on-select="false"
+            :clear-on-select="false"
+            hide-selected
+            :placeholder="$t('CAMPAIGN.ADD.FORM.AUDIENCE.PLACEHOLDER')"
+            selected-label
+            :select-label="$t('FORMS.MULTISELECT.ENTER_TO_SELECT')"
+            :deselect-label="$t('FORMS.MULTISELECT.ENTER_TO_REMOVE')"
+            @blur="v$.selectedAudience.$touch"
+            @select="v$.selectedAudience.$touch"
+          />
+          <span v-if="v$.selectedAudience.$error" class="message">
+            {{ $t('CAMPAIGN.ADD.FORM.AUDIENCE.ERROR') }}
+          </span>
+        </label>
     </div>
   </woot-modal>
 </template>
