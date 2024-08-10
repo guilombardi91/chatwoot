@@ -10,29 +10,19 @@ export default {
       type: Boolean,
       default: false,
     },
-    contacts: {
+    contact: {
       type: Array,
-      default: () => [],
-    },
-    audiencelist: {
-      type: Array,
-      default: () => [],
+      default: () => ({}),
     },
   },
   watch: {
-    contacts: {
-      handler(newContacts) {
-        newContacts.forEach(contact => {
-          this.$store.dispatch('contacts/fetchContactableInbox', contact.id);
-        });
-      },
-      deep: true,
+    'contact.id'(id) {
+      this.$store.dispatch('contacts/fetchContactableInbox', id);
     },
   },
   mounted() {
-    this.contacts.forEach(contact => {
-      this.$store.dispatch('contacts/fetchContactableInbox', contact.id);
-    });
+    const { id } = this.contact;
+    this.$store.dispatch('contacts/fetchContactableInbox', id);
   },
   methods: {
     onCancel() {
@@ -42,20 +32,17 @@ export default {
       this.$emit('cancel');
     },
     async onSubmit(params, isFromWhatsApp) {
-      const sendMessages = this.contacts.length ? this.contacts : this.audiencelist;
-      const promises = sendMessages.map(contact => {
-        return this.$store.dispatch('contactConversations/create', {
-          params: { ...params, contactId: contact.id },
-          isFromWhatsApp,
-        });
+      const data = await this.$store.dispatch('contactConversations/create', {
+        params,
+        isFromWhatsApp,
       });
-      const data = await Promise.all(promises);
       return data;
     },
   },
 };
 </script>
 
+<!-- eslint-disable vue/no-mutating-props -->
 <template>
   <woot-modal :show.sync="show" :on-close="onCancel">
     <div class="flex flex-col h-auto overflow-auto">
@@ -64,8 +51,7 @@ export default {
         :header-content="$t('NEW_CONVERSATION.DESC')"
       />
       <ConversationForm
-        :contacts="contacts"
-        :audiencelist="audiencelist"
+        :contact="contact"
         :on-submit="onSubmit"
         @success="onSuccess"
         @cancel="onCancel"
